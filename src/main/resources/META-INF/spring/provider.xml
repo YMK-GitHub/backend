@@ -22,10 +22,10 @@
 
     <!--服务发布的配置，需要暴露的服务接口-->
     <dubbo:service
-            interface="com.example.backend.DubboDemo.ProviderService"
+            interface="com.example.backend.Dubbo.ProviderService"
             ref="providerService"/>
 
     <!--Bean bean定义-->
-    <bean id="providerService" class="com.example.backend.DubboDemo.impl.ProviderServiceImpl"/>
+    <bean id="providerService" class="com.example.backend.Dubbo.impl.ProviderServiceImpl"/>
 
 </beans>

@@ -1,4 +1,4 @@
-package com.example.backend.task;
+package com.example.backend.quartz;
 
 import org.quartz.Scheduler;
 import org.quartz.spi.JobFactory;
@@ -29,7 +29,7 @@ public class SchedulerConfig {
         //用于quartz集群，QuartzScheduler启动时更新已存在的job
 //        factory.setOverwriteExistingJobs(true);
         // 延时启动，应用启动1秒后
-         factory.setStartupDelay(5);
+        factory.setStartupDelay(5);
         factory.setJobFactory(jobFactory);
         return factory;
     }

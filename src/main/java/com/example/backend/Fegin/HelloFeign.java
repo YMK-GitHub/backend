@@ -1,4 +1,4 @@
-package com.example.backend.FeginDemo;
+package com.example.backend.Fegin;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.MediaType;

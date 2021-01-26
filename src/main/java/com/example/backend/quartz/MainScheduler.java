@@ -1,11 +1,10 @@
-package com.example.backend.task;
+package com.example.backend.quartz;
 
-import com.example.backend.controller.controllerDemo;
+
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import org.springframework.util.StringUtils;
 
 @Component
 public class MainScheduler  implements CommandLineRunner {

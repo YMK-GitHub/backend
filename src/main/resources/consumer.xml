@@ -15,7 +15,7 @@
     <!--生成一个远程服务的调用代理-->
     <!--点对点方式-->
     <dubbo:reference id="providerService"
-                     interface="com.example.backend.DubboDemo.ProviderService"/>
+                     interface="com.example.backend.Dubbo.ProviderService"/>
 
 
 

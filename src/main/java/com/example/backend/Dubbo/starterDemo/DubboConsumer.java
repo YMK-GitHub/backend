@@ -1,6 +1,6 @@
-package com.example.backend.DubboDemo.starterDemo;
+package com.example.backend.Dubbo.starterDemo;
 
-import com.example.backend.DubboDemo.ProviderService;
+import com.example.backend.Dubbo.ProviderService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;

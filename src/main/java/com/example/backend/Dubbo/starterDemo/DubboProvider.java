@@ -1,4 +1,4 @@
-package com.example.backend.DubboDemo.starterDemo;
+package com.example.backend.Dubbo.starterDemo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

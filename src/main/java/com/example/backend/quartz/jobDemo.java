@@ -1,18 +1,15 @@
-package com.example.backend.task;
+package com.example.backend.quartz;
 
-import com.example.backend.controller.controllerDemo;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class jobDemo implements Job {
 
 
     @Override
     public void execute(JobExecutionContext context) throws JobExecutionException {
-        System.out.println("jobDemo执行了");
+        //打印现象
+        //        System.out.println("quartzJob执行了");
     }
 }

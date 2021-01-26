@@ -1,7 +1,7 @@
-package com.example.backend.DubboDemo.impl;
+package com.example.backend.Dubbo.impl;
 
-import com.example.backend.DubboDemo.ProviderService;
-import com.example.backend.FeginDemo.HelloFeign;
+import com.example.backend.Dubbo.ProviderService;
+import com.example.backend.Fegin.HelloFeign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

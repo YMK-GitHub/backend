@@ -1,4 +1,4 @@
-package com.example.backend.task;
+package com.example.backend.quartz;
 
 import org.quartz.spi.TriggerFiredBundle;
 import org.springframework.beans.factory.config.AutowireCapableBeanFactory;
