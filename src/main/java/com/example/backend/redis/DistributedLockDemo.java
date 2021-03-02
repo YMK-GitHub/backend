@@ -18,6 +18,7 @@ public class DistributedLockDemo {
         String mes = "";
         RLock lock = client.getLock("锁1");
 
+
         if (lock.tryLock()) {
 
             mes= "分布式事务锁1Lock成功";
