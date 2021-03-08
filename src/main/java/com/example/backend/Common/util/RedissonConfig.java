@@ -1,4 +1,4 @@
-package com.example.backend.redis;
+package com.example.backend.Common.util;
 
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
