@@ -18,7 +18,7 @@ import java.util.List;
 
 @Api(tags = "SwaggerController", description = "SwaggerDemo")
 @Controller
-@RequestMapping("/brand")
+@RequestMapping("/swagger")
 public class SwaggerController {
     @Autowired
     UserMapper mapper;

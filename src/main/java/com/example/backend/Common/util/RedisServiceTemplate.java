@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  * Created by macro on 2018/8/7.
  */
 @Service
-public class RedisServiceImpl   {
+public class RedisServiceTemplate   {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
