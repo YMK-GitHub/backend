@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class DistributedLockDemo {
+public class DistributedLock {
 
     @Autowired
     RedissonClient client;

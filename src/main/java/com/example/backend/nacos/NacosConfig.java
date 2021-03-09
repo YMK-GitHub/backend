@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RefreshScope
-public class NacosConfigDemo {
+public class NacosConfig {
 
 
         @Value("${spring.application.name}")
