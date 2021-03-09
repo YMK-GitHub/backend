@@ -9,7 +9,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableFeignClients
 @EnableDiscoveryClient
-@MapperScan("com.example.backend.Ajax.mapper")
 public class backendApplication {
 
     public static void main(String[] args) {

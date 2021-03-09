@@ -4,9 +4,9 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 
 import com.example.backend.Ajax.pojo.UserEntity;
-import org.springframework.stereotype.Repository;
+import org.apache.ibatis.annotations.Mapper;
 // 在对应的Mapper上面继承基本的类 BaseMapper
-@Repository
+@Mapper
 public interface UserMapper extends BaseMapper<UserEntity> {
 
 

@@ -10,6 +10,6 @@ public class jobDemo implements Job {
     @Override
     public void execute(JobExecutionContext context) throws JobExecutionException {
         //打印现象
-        //        System.out.println("quartzJob执行了");
+               System.out.println("quartzJob执行了");
     }
 }
