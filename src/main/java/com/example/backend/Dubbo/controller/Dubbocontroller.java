@@ -6,7 +6,7 @@ package com.example.backend.Dubbo.controller;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class controller {
+public class Dubbocontroller {
 
     @Autowired
     ProviderService  ProviderService;
