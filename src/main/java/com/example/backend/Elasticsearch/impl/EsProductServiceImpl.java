@@ -45,22 +45,37 @@ public class EsProductServiceImpl implements EsProductService {
 
     @Override
     public void delete(Long id) {
-
+        productRepository.deleteById(id);
     }
 
     @Override
     public EsProduct create(Long id) {
-        return null;
+        EsProduct result = null;
+        List<EsProduct> esProductList = productDao.getAllEsProductList(id);
+        if (esProductList.size() > 0) {
+            EsProduct esProduct = esProductList.get(0);
+            result = productRepository.save(esProduct);
+        }
+        return result;
     }
 
     @Override
     public void delete(List<Long> ids) {
-
+        if (!CollectionUtils.isEmpty(ids)) {
+            List<EsProduct> esProductList = new ArrayList<>();
+            for (Long id : ids) {
+                EsProduct esProduct = new EsProduct();
+                esProduct.setId(id);
+                esProductList.add(esProduct);
+            }
+            productRepository.deleteAll(esProductList);
+        }
     }
 
     @Override
     public Page<EsProduct> search(String keyword, Integer pageNum, Integer pageSize) {
-        return null;
+        Pageable pageable = PageRequest.of(pageNum, pageSize);
+        return productRepository.findByNameOrSubTitleOrKeywords(keyword, keyword, keyword, pageable);
     }
 
 
