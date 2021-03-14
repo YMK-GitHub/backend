@@ -187,4 +187,28 @@ public class EsProduct implements Serializable {
     public void setSort(Integer sort) {
         this.sort = sort;
     }
+
+    @Override
+    public String toString() {
+        return "EsProduct{" +
+                "id=" + id +
+                ", productSn='" + productSn + '\'' +
+                ", brandId=" + brandId +
+                ", brandName='" + brandName + '\'' +
+                ", productCategoryId=" + productCategoryId +
+                ", productCategoryName='" + productCategoryName + '\'' +
+                ", pic='" + pic + '\'' +
+                ", name='" + name + '\'' +
+                ", subTitle='" + subTitle + '\'' +
+                ", keywords='" + keywords + '\'' +
+                ", price=" + price +
+                ", sale=" + sale +
+                ", newStatus=" + newStatus +
+                ", recommandStatus=" + recommandStatus +
+                ", stock=" + stock +
+                ", promotionType=" + promotionType +
+                ", sort=" + sort +
+                ", attrValueList=" + attrValueList +
+                '}';
+    }
 }

@@ -58,10 +58,12 @@ public class EsProductController {
     @ApiOperation(value = "简单搜索")
     @RequestMapping(value = "/search/simple", method = RequestMethod.GET)
     @ResponseBody
-    public void search(@RequestParam(required = false) String keyword,
+    public  Page<EsProduct> search(@RequestParam(required = false) String keyword,
                                               @RequestParam(required = false, defaultValue = "0") Integer pageNum,
                                               @RequestParam(required = false, defaultValue = "5") Integer pageSize) {
         Page<EsProduct> esProductPage = esProductService.search(keyword, pageNum, pageSize);
+
+        return  esProductPage;
      }
 
 }
